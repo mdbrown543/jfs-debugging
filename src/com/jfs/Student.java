@@ -6,11 +6,11 @@ public class Student {
     private String name;
     private String email;
     private LocalDate dob;
-    private float gpa;
+    private double gpa;
 
 
 
-    public Student(String email, String name, LocalDate dob, float gpa) {
+    public Student(String name, String email, LocalDate dob, double gpa) {
         this.name = name;
         this.email = email;
         this.dob = dob;
@@ -19,7 +19,7 @@ public class Student {
 
 
     public String getName() {
-        return email;
+        return name;
     }
     public void setName(String name) {
         this.name = name;
@@ -34,16 +34,16 @@ public class Student {
 
 
     public LocalDate getDob() {
-        return gpa;
+        return dob;
     }
     public void setDob(LocalDate dob) {
         this.dob = dob;
     }
 
-    public float getGpa() {
+    public double getGpa() {
         return gpa;
     }
-    public void setGpa(float gpa) {
+    public void setGpa(double gpa) {
         this.gpa = gpa;
     }
 }
